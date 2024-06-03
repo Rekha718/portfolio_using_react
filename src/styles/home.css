@@ -1,0 +1,63 @@
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #d4f1f9 10%, #070707 100%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: background 0.3s ease; 
+}
+
+.home h1 {
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  transition: color 0.3s ease; 
+}
+
+.home p {
+  font-size: 1.5em;
+  margin-top: 10px;
+  transition: color 0.3s ease; 
+}
+
+.home:hover {
+  background: linear-gradient(135deg, #16a3c3 10%, #9aefce 100%); 
+}
+
+.home h1:hover, .home p:hover {
+  color: #ffd700; 
+}
+
+.portfolio-image {
+  width: 200px; 
+  border-radius: 50%; 
+  margin-bottom: 20px; 
+  transition: transform 0.3s ease; 
+}
+
+.portfolio-image:hover {
+  transform: scale(1.1); 
+}
+
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 2.5em;
+  }
+
+  .home p {
+    font-size: 1.2em;
+  }
+}
